@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Street View Example</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scrollbar */
+        }
+
+        #map-container {
+            position: relative;
+            height: 100%;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+        }
+
+        #location-text {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            color: red;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000; /* Ensure the text appears above the map */
+            overflow: hidden; /* Hide overflow */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        #distance-text {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            font-size: 16px;
+            color: blue;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000; /* Ensure the text appears above the map */
+            overflow: hidden; /* Hide overflow */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        /* Add styles for the blur overlay */
+        #blur-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.8)); /* Radial gradient for blur effect */
+            opacity: 0; /* Initially fully transparent */
+            z-index: 999; /* Ensure the overlay appears below the text */
+            pointer-events: none; /* Allow interaction with elements below */
+            transition: opacity 1s ease; /* Smooth transition for opacity */
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="location-text"></div> <!-- Add a div for location text -->
+        <div id="distance-text"></div> <!-- Add a div for distance text -->
+        <div id="blur-overlay"></div> <!-- Add a div for the blur overlay -->
+        
+    </div>
+
+    <script>
+        // Array of specific locations
+        var specificLocations = [
+        
+            {
+    lat: 13.0151276,
+    lng: 5.2592477,
+    text: "Niger",
+    exactViewpoint: {
+        heading: 335.5, // Adjust heading as needed
+        pitch: 12.13, // Adjust pitch as needed
+        zoom: 2
+    }
+},
+{
+    lat: 3.6097519,
+    lng: 98.4904718,
+    text: "Lake Toba, Indonesia",
+    exactViewpoint: {
+        heading: 223.33, // Adjust heading as needed
+        pitch: -4.34, // Adjust pitch as needed
+        zoom: 2
+    }
+},
+{
+    lat: 13.9502548,
+    lng: 75.5902423,
+    text: "Western Ghats, India",
+    exactViewpoint: {
+        heading: 210.41, // Adjust heading as needed
+        pitch: -11.75, // Adjust pitch as needed
+        zoom: 3.9
+    }
+},
+
+{
+    lat: 28.9795412,
+    lng: -13.5476138,
+    text: "Lanzarote, Spain",
+    exactViewpoint: {
+        heading: 219.19,
+        pitch: -8.3,
+        zoom: 3.3 // Set a default FOV value
+    }
+    
+},
+{
+    lat: 35.3212003,
+    lng: -106.5539356,
+    text: "Albuquerque, New Mexico, USA",
+    exactViewpoint: {
+        heading: 33.01, // Adjust heading as needed
+        pitch: -20.83 // Adjust pitch as needed
+    }
+},
+{
+    lat: 40.7179253,
+    lng: -73.9971067,
+    text: "Chinatown, New York City, USA",
+    exactViewpoint: {
+        heading: 74.46, // Adjust heading as needed
+        pitch: -17.68, // Adjust pitch as needed
+        zoom:2
+
+    }
+},
+{
+    lat: 40.7058455,
+    lng: -74.0098305,
+    text: "Battery Park, New York City, USA",
+    exactViewpoint: {
+        heading: 81.69, // Adjust heading as needed
+        pitch: 85.33 // Adjust pitch as needed
+    }
+},
+
+{
+lat: 40.6925219,
+lng: -73.97174,
+text: "Brooklyn, New York City, USA",
+exactViewpoint: {
+heading: 255.78, // Adjust heading as needed
+pitch: 94.68 // Adjust pitch as needed
+}
+},
+{
+    lat: 40.7254924,
+    lng: -73.9931696,
+    text: "Union Square Park, New York City, USA",
+    exactViewpoint: {
+        heading: 207.46, // Adjust heading as needed
+        pitch: 68.83 // Adjust pitch as needed
+    }
+},
+
+
+{
+lat: 51.4958055,
+lng: -0.1607832,
+text: "Buckingham Palace, London, UK",
+exactViewpoint: {
+heading: 356.64, // Adjust heading as needed
+pitch: 91.45 // Adjust pitch as needed
+}
+},
+
+
+
+
+{
+    lat: 37.8770857,
+    lng: -4.7837702,
+    text: "Cordoba, Spain",
+    exactViewpoint: {
+        heading: 241.06, // Adjust heading as needed
+        pitch: 10.21 // Adjust pitch as needed
+    }
+},
+
+{
+    lat: 29.2461919,
+    lng: -13.5092233,
+    text: "Fuerteventura, Spain",
+    exactViewpoint: {
+        heading: 248.89, // Adjust heading as needed
+        pitch: 30.48 // Adjust pitch as needed
+    }
+},
+         
+            {
+                lat: 41.8302558,
+                lng: -3.0670121,
+                text: "S. Leonardo de Yagüe, Soria, Spain",
+                exactViewpoint: {
+                    heading: 832, // Face south
+                    pitch: -22, // Keep the pitch level
+                    zoom: 2
+                }
+            },
+            {
+                lat: 41.8946088,
+                lng: 12.4842658,
+                text: "Rome, Italy",
+                exactViewpoint: {
+                heading: 304.18, // Adjust heading as needed
+                pitch: -24.33,
+                zoom: 2 // Adjust pitch as needed
+    }
+},
+{
+    lat: 53.6555157,
+    lng: -6.6770602,
+    text: "County Meath, Ireland",
+    exactViewpoint: {
+        heading: 148.45, // Adjust heading as needed
+        pitch: -20.5, // Adjust pitch as needed
+        zoom: 3
+    }
+},
+
+{
+    lat: 34.5227431,
+    lng: 139.2840826,
+    text: "Japan",
+    exactViewpoint: {
+        heading: 46.48, // Adjust heading as needed
+        pitch: 20.67 // Adjust pitch as needed
+    }
+},
+
+{
+    lat: 48.8599408,
+    lng: 2.3517443,
+    text: "Paris, France",
+    exactViewpoint: {
+        heading: 204.7, // Adjust heading as needed
+        pitch: -10.63, // Adjust pitch as needed
+        zoom: 1.5
+    }
+},
+
+
+            // Add more locations as needed
+        ];
+
+        function getRandomLocation(locations) {
+            // Randomly select one of the specific locations
+            return locations[Math.floor(Math.random() * locations.length)];
+        }
+
+        function initMap() {
+            // Get a random specific location
+            var randomLocation = getRandomLocation(specificLocations);
+
+            // Create a map centered at the random location
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: randomLocation,
+                zoom: 14 // Adjust the zoom level as needed
+            });
+
+            // Create a Street View Service object
+            var streetViewService = new google.maps.StreetViewService();
+
+            // Define a Street View request
+            var streetViewRequest = {
+                location: randomLocation,
+                preference: google.maps.StreetViewPreference.NEAREST,
+                radius: 50, // Search within 50 meters radius
+                source: google.maps.StreetViewSource.OUTDOOR // Ensure outdoor view
+            };
+
+            // Retrieve a Street View panorama (image)
+            streetViewService.getPanorama(streetViewRequest, function(data, status) {
+                if (status === 'OK') {
+                    // Display the Street View panorama
+                    var exactViewpoint = randomLocation.exactViewpoint || {}; // Use the exact viewpoint if specified, otherwise default to an empty object
+                    var panorama = new google.maps.StreetViewPanorama(
+                        document.getElementById('map'), {
+                            pano: data.location.pano,
+                            pov: exactViewpoint, // Use the exact viewpoint
+                            visible: true,
+                            showRoadLabels: false, // Disable the text/symbols
+                            disableDefaultUI: true // Disable all default UI elements
+                        });
+                    map.setStreetView(panorama);
+                    
+                    // Display corresponding text for the location with typing effect
+                    var locationText = "Location: " + randomLocation.text;
+                    var index = 0;
+                    function typeLocationText() {
+                        if (index < locationText.length) {
+                            document.getElementById('location-text').textContent += locationText.charAt(index);
+                            index++;
+                            setTimeout(typeLocationText, 100); // Adjust typing speed (milliseconds)
+                            
+                            // Gradually increase opacity of blur overlay
+                            document.getElementById('blur-overlay').style.opacity = 1 - (index / locationText.length);
+                        } 
+                    }
+                    typeLocationText();
+
+                    // Calculate distance from user's location
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(function(position) {
+                            var userLocation = {
+                                lat: position.coords.latitude,
+                                lng: position.coords.longitude
+                            };
+
+                            var distance = google.maps.geometry.spherical.computeDistanceBetween(
+                                new google.maps.LatLng(userLocation.lat, userLocation.lng),
+                                new google.maps.LatLng(randomLocation.lat, randomLocation.lng)
+                            );
+
+                            var distanceText = "Distance: " + (distance / 1000).toFixed(2) + " km";
+                            document.getElementById('distance-text').textContent = distanceText;
+                        });
+                    } else {
+                        document.getElementById('distance-text').textContent = "Geolocation is not supported by this browser.";
+                    }
+                } else {
+                    // Handle error
+                    console.error('Street View data not found for this location:', status);
+                }
+            });
+        }
+    </script>
+    <!-- Load the Google Maps JavaScript API -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI&callback=initMap&libraries=geometry">
+    </script>
+</body>
+</html>

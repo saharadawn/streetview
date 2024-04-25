@@ -1,0 +1,15 @@
+html{
+    margin:0;
+    font-size:10px;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:1.6rem;
+    margin:0;
+}
+
+
+.sort-btn{
+    width: 10rem,
+}
