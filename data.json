@@ -1,0 +1,442 @@
+[
+    {
+        "lat": 13.0151276,
+        "lng": 5.2592477,
+        "text": "Nigeria",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 335.5, 
+            "pitch": 9.53, 
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 3.6097519,
+        "lng": 98.4904718,
+        "text": "Lake Toba, Indonesia",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 223.33, 
+            "pitch": -5.34, 
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 13.9502548,
+        "lng": 75.5902423,
+        "text": "Western Ghats, India",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 210.41,
+            "pitch": -13.75, 
+            "zoom": 3.9
+        }
+    },
+    {
+        "lat": 33.9229593,
+        "lng": -102.3295443,
+        "text": "Littlefield, Texas",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 126.38,
+            "pitch": -15.43,
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 28.9795412,
+        "lng": -13.5476138,
+        "text": "Lanzarote, Spain",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 219.19,
+            "pitch": -8.3,
+            "zoom": 3.3 
+        }
+    },
+    {
+        "lat": 35.3212003,
+        "lng": -106.5539356,
+        "text": "Albuquerque, New Mexico, USA",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 36.01, 
+            "pitch": -7.83, 
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 40.7179253,
+        "lng": -73.9971067,
+        "text": "Chinatown, New York City, USA",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 76.46, 
+            "pitch": -14.68, 
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 40.7058455,
+        "lng": -74.0098305,
+        "text": "Battery Park, New York City, USA",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 81.69, 
+            "pitch": 85.33 
+        }
+    },
+    {
+        "lat": 51.4958055,
+        "lng": -0.1607832,
+        "text": "Buckingham Palace, London, UK",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 350.64, 
+            "pitch": 2, 
+            "zoom": 3
+        }
+    },
+    {
+        "lat": 37.8770857,
+        "lng": -4.7837702,
+        "text": "Cordoba, Spain",
+        "exactViewpoint": {
+            "heading": 241.06, 
+            "pitch": -8.21 
+        }
+    },
+    {
+        "lat": 29.2461919,
+        "lng": -13.5092233,
+        "text": "Fuerteventura, Spain",
+        "exactViewpoint": {
+            "heading": 248.89, 
+            "pitch": -10.48,
+            "zoom": 1.2
+        }
+    },
+    {
+        "lat": 41.8302558,
+        "lng": -3.0670121,
+        "text": "S. Leonardo de Yagüe, Soria, Spain",
+        "exactViewpoint": {
+            "heading": 832, 
+            "pitch": -24, 
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 41.8946088,
+        "lng": 12.4842658,
+        "text": "Rome, Italy",
+        "exactViewpoint": {
+            "heading": 304.18, 
+            "pitch": -24.33,
+            "zoom": 2 
+        }
+    },
+    {
+        "lat": 53.6555157,
+        "lng": -6.6770602,
+        "text": "County Meath, Ireland",
+        "exactViewpoint": {
+            "heading": 148.45, 
+            "pitch": -20.5, 
+            "zoom": 3
+        }
+    },
+    {
+        "lat": 34.5227431,
+        "lng": 139.2840826,
+        "text": "Japan",
+        "exactViewpoint": {
+            "heading": 46.48, 
+            "pitch": 20.67 
+        }
+    },
+    {
+        "lat": 48.8599408,
+        "lng": 2.3517443,
+        "text": "Paris, France",
+        "exactViewpoint": {
+            "heading": 204.7, 
+            "pitch": -10.63, 
+            "zoom": 1.7
+        }
+    },
+    {
+        "lat": 33.9222506,
+        "lng": -102.3302325,
+        "text": "Littlefield, Texas",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 308.59,
+            "pitch": -1.98,
+            "zoom": 2.3
+        }
+    },
+    {
+        "lat": 15.3956339,
+        "lng": -15.1161135,
+        "text": "Linguere, Louga Region",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 218.95,
+            "pitch": -1.1,
+            "zoom": 4
+        }
+    },
+    {
+        "lat": 40.6390495,
+        "lng": 15.8041118,
+        "text": "Potenza, Basilitaca",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 341.4,
+            "pitch": -18.9,
+            "zoom": 3
+        }
+    },
+    {
+        "lat": 37.1659704,
+        "lng": 38.7642479,
+        "text": "Sanliurfa, Turkey",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 158.16,
+            "pitch": -7,
+            "zoom": 4
+        }
+    },
+    {
+        "lat": 37.1663393,
+        "lng": 38.7643656,
+        "text": "Sanliurfa, Turkey",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 268.47,
+            "pitch": -14.86,
+            "zoom": 2.7
+        }
+    },
+    {
+        "lat": 37.1614625,
+        "lng": 38.7665546,
+        "text": "Location Name",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 90.07,
+            "pitch": -14.92,
+            "zoom": 2.5
+        }
+    },
+    {
+        "lat": 37.1631766,
+        "lng": 38.7636548,
+        "text": "Location Name",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 77.04,
+            "pitch": -6.46,
+            "zoom": 3
+        }
+    },
+    {
+        "lat": 37.1630838,
+        "lng": 38.7644628,
+        "text": "Location Name",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 219.25,
+            "pitch": -15.63,
+            "zoom": 1.5
+        }
+    },
+    {
+        "lat": 41.9289022,
+        "lng": -87.6594194,
+        "text": "Nina's House",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 206.8,
+            "pitch": 95.45
+        }
+    },
+    {
+        "lat": 42.6419981,
+        "lng": 24.806542,
+        "text": "Karlovo, Plovdov Province",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 41.18,
+            "pitch": -2.44,
+            "zoom": 3
+        }
+    },
+    {
+        "lat": 45.3629477,
+        "lng": 9.6868983,
+        "text": "Crema, Italy",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 295.34,
+            "pitch": -22.39,
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 43.4675219,
+        "lng": 11.8850158,
+        "text": "Arezzo, Italy",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 68.07,
+            "pitch": -12.99,
+            "zoom": 2.5
+        }
+    },
+    {
+        "lat": 37.0694759,
+        "lng": 14.2516043,
+        "text": "Gela, Sicily",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 243.16,
+            "pitch": -15.16,
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 13.5981531,
+        "lng": -15.6048677,
+        "text": "Keur Ayip, Gambia",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 131.87,
+            "pitch": -7.35,
+            "zoom": 3.4
+        }
+    },
+    {
+        "lat": 13.5976966,
+        "lng": -15.6049045,
+        "text": "Keur Ayip, Gambia",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 262.51,
+            "pitch": -5.7,
+            "zoom": 4
+        }
+    },
+    {
+        "lat": 20.452286,
+        "lng": 121.9636958,
+        "text": "Basco Lighthouse",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 223.37,
+            "pitch": -23.12,
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 16.217713,
+        "lng": 100.4232909,
+        "text": "Taphan Hin, Phichit",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 236.96,
+            "pitch": -15.14,
+            "zoom": 3.5
+        }
+    },
+    {
+        "lat": 47.4614779,
+        "lng": 8.2482008,
+        "text": "Birmenstorf, Aargau",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 356.62,
+            "pitch": 11.06,
+            "zoom": 5
+        }
+    },
+    {
+        "lat": 34.1492002,
+        "lng": 135.355252,
+        "text": "Kimino, Wakayama",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 250.27,
+            "pitch": 15.86,
+            "zoom": 3
+        }
+    },
+    {
+        "lat": 35.3772038,
+        "lng": 136.2720485,
+        "text": "Nagahama, Shiga",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 204.9,
+            "pitch": 11,
+            "zoom": 5
+        }
+    },
+    {
+        "lat": 47.9159907,
+        "lng": 106.8991126,
+        "text": "Ulaanbaatar, Mongolia",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 327.83,
+            "pitch": -6.86,
+            "zoom": 7
+        }
+    },
+    {
+        "lat": 49.1540913,
+        "lng": 6.145563,
+        "text": "Woippy, France",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 63.2,
+            "pitch": 3,
+            "zoom": 5
+        }
+    },
+    {
+        "lat": 38.3463661,
+        "lng": 38.3505699,
+        "text": "Malatya, Turkey",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 51.18,
+            "pitch": -8.82,
+            "zoom": 5
+        }
+    },
+    {
+        "lat": -20.2581021,
+        "lng": 23.8278468,
+        "text": "Mmumoshweu, Botswana",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 245.07,
+            "pitch": -5.8,
+            "zoom": 5
+        }
+    },
+    {
+        "lat": 14.7169378,
+        "lng": -17.44646,
+        "text": "Dakar, Senegal",
+        "title": "HELLO",
+        "exactViewpoint": {
+            "heading": 294.29,
+            "pitch": -3.7,
+            "zoom": 4
+        }
+    }
+]
