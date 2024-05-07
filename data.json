@@ -141,16 +141,7 @@
             "pitch": 20.67 
         }
     },
-    {
-        "lat": 48.8599408,
-        "lng": 2.3517443,
-        "text": "Paris, France",
-        "exactViewpoint": {
-            "heading": 204.7, 
-            "pitch": -10.63, 
-            "zoom": 1.7
-        }
-    },
+  
     {
         "lat": 33.9222506,
         "lng": -102.3302325,
@@ -429,7 +420,7 @@
         "lat": 14.7169378,
         "lng": -17.44646,
         "text": "Dakar, Senegal",
-        "title": "colors in dakar",
+        "title": "colors of dakar",
         "exactViewpoint": {
             "heading": 294.29,
             "pitch": -3.7,
@@ -693,7 +684,20 @@
             "pitch": -10.51,
             "zoom": 3
         }
+    },
+
+    {
+        "lat": 43.3191173,
+        "lng": 11.3271378,
+        "text": "Firenze, Italy",
+        "title": "hello sir",
+        "exactViewpoint": {
+            "heading": 97.62,
+            "pitch": -10.24,
+            "zoom": 2
+        }
     }
+    
     
     
     
