@@ -3,7 +3,7 @@
         "lat": 13.0151276,
         "lng": 5.2592477,
         "text": "Nigeria",
-        "title": "HELLO",
+        "title": "accep table",
         "exactViewpoint": {
             "heading": 335.5, 
             "pitch": 9.53, 
@@ -14,7 +14,7 @@
         "lat": 3.6097519,
         "lng": 98.4904718,
         "text": "Lake Toba, Indonesia",
-        "title": "HELLO",
+        "title": "in the alleys of lake toba, there are motorbikes",
         "exactViewpoint": {
             "heading": 223.33, 
             "pitch": -5.34, 
@@ -36,7 +36,7 @@
         "lat": 33.9229593,
         "lng": -102.3295443,
         "text": "Littlefield, Texas",
-        "title": "HELLO",
+        "title": "littlefield, texas...",
         "exactViewpoint": {
             "heading": 126.38,
             "pitch": -15.43,
@@ -121,7 +121,7 @@
     {
         "lat": 41.8302558,
         "lng": -3.0670121,
-        "title": "a mother, a son, a child–perplexed",
+        "title": "a mother, a child, a baby–perplexed",
         "text": "S. Leonardo de Yagüe, Soria, Spain",
         "exactViewpoint": {
             "heading": 832, 
@@ -155,6 +155,7 @@
         "lat": 34.5227431,
         "lng": 139.2840826,
         "text": "Japan",
+        "title": "postcard",
         "exactViewpoint": {
             "heading": 46.48, 
             "pitch": 20.67 
@@ -174,7 +175,7 @@
         "lat": 33.9222506,
         "lng": -102.3302325,
         "text": "Littlefield, Texas",
-        "title": "HELLO",
+        "title": "i spy an oven",
         "exactViewpoint": {
             "heading": 308.59,
             "pitch": -1.98,
@@ -185,7 +186,7 @@
         "lat": 15.3956339,
         "lng": -15.1161135,
         "text": "Linguere, Louga Region",
-        "title": "HELLO",
+        "title": "stairway to",
         "exactViewpoint": {
             "heading": 218.95,
             "pitch": -1.1,
@@ -196,7 +197,7 @@
         "lat": 40.6390495,
         "lng": 15.8041118,
         "text": "Potenza, Basilitaca",
-        "title": "HELLO",
+        "title": "triangle in the market",
         "exactViewpoint": {
             "heading": 341.4,
             "pitch": -18.9,
@@ -228,7 +229,7 @@
     {
         "lat": 37.1614625,
         "lng": 38.7665546,
-        "text": "Location Name",
+        "text": "Sanliurfa, Turkey",
         "title": "HELLO",
         "exactViewpoint": {
             "heading": 90.07,
@@ -262,7 +263,7 @@
         "lat": 41.9289022,
         "lng": -87.6594194,
         "text": "Nina's House",
-        "title": "HELLO",
+        "title": "trees above nina's house",
         "exactViewpoint": {
             "heading": 206.8,
             "pitch": 95.45
@@ -272,7 +273,7 @@
         "lat": 42.6419981,
         "lng": 24.806542,
         "text": "Karlovo, Plovdov Province",
-        "title": "HELLO",
+        "title": "untitled",
         "exactViewpoint": {
             "heading": 41.18,
             "pitch": -2.44,
@@ -305,7 +306,7 @@
         "lat": 37.0694759,
         "lng": 14.2516043,
         "text": "Gela, Sicily",
-        "title": "HELLO",
+        "title": "three figures",
         "exactViewpoint": {
             "heading": 243.16,
             "pitch": -15.16,
@@ -316,7 +317,7 @@
         "lat": 13.5981531,
         "lng": -15.6048677,
         "text": "Keur Ayip, Gambia",
-        "title": "installation",
+        "title": "installation 1",
         "exactViewpoint": {
             "heading": 131.87,
             "pitch": -7.35,
@@ -327,7 +328,7 @@
         "lat": 13.5976966,
         "lng": -15.6049045,
         "text": "Keur Ayip, Gambia",
-        "title": "HELLO",
+        "title": "installation 2",
         "exactViewpoint": {
             "heading": 262.51,
             "pitch": -5.7,
@@ -338,7 +339,7 @@
         "lat": 20.452286,
         "lng": 121.9636958,
         "text": "Basco Lighthouse",
-        "title": "HELLO",
+        "title": "simple cow",
         "exactViewpoint": {
             "heading": 223.37,
             "pitch": -23.12,
@@ -349,7 +350,7 @@
         "lat": 16.217713,
         "lng": 100.4232909,
         "text": "Taphan Hin, Phichit",
-        "title": "wants to be a dog",
+        "title": "simple cat",
         "exactViewpoint": {
             "heading": 236.96,
             "pitch": -15.14,
@@ -360,7 +361,7 @@
         "lat": 47.4614779,
         "lng": 8.2482008,
         "text": "Birmenstorf, Aargau",
-        "title": "HELLO",
+        "title": "mirror 3/3",
         "exactViewpoint": {
             "heading": 356.62,
             "pitch": 11.06,
@@ -393,7 +394,7 @@
         "lat": 47.9159907,
         "lng": 106.8991126,
         "text": "Ulaanbaatar, Mongolia",
-        "title": "HELLO",
+        "title": "video game car",
         "exactViewpoint": {
             "heading": 327.83,
             "pitch": -6.86,
@@ -415,7 +416,7 @@
         "lat": 38.3463661,
         "lng": 38.3505699,
         "text": "Malatya, Turkey",
-        "title": "HELLO",
+        "title": "simple human",
         "exactViewpoint": {
             "heading": 51.18,
             "pitch": -8.82,
@@ -437,7 +438,7 @@
         "lat": 14.7169378,
         "lng": -17.44646,
         "text": "Dakar, Senegal",
-        "title": "HELLO",
+        "title": "colors in dakar",
         "exactViewpoint": {
             "heading": 294.29,
             "pitch": -3.7,
