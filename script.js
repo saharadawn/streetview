@@ -229,6 +229,44 @@ thumbnailImage.classList.add('snapshot-image'); // Add CSS class for styling
     });
 }
 
+// Function to download all snapshots as a zip file
+function downloadAllSnapshots() {
+    var snapshots = JSON.parse(localStorage.getItem('snapshots')) || [];
+    if (snapshots.length === 0) {
+        alert("No snapshots available to download.");
+        return;
+    }
+
+    // Create a new instance of JSZip
+    var zip = new JSZip();
+
+    // Add each snapshot image to the zip file
+    snapshots.forEach(function(snapshotUrl, index) {
+        // Fetch the image
+        fetch(snapshotUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                // Add the image to the zip file
+                zip.file('snapshot_' + index + '.jpg', blob, { binary: true });
+                if (index === snapshots.length - 1) {
+                    // Once all images are added, generate the zip file
+                    zip.generateAsync({ type: "blob" })
+                        .then(function(content) {
+                            // Trigger download
+                            saveAs(content, "snapshots.zip");
+                        });
+                }
+            })
+            .catch(error => console.error("Error downloading snapshot:", error));
+    });
+}
+
+// Add event listener to download all snapshots button
+document.getElementById('download-all-snapshots-button').addEventListener('click', downloadAllSnapshots);
+
+// Ensure this code is placed after the initialization of your map and other necessary elements.
+
+
 // Function to clear snapshots
 function clearSnapshots() {
     // Clear snapshot URLs from local storage
