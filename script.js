@@ -193,8 +193,8 @@ function takeSnapshotAndDisplay() {
     var zoom = panorama.getZoom();
 
     // Set the dimensions of the thumbnail
-    var thumbnailWidth = 150; // Width for the thumbnail
-    var thumbnailHeight = 100; // Height for the thumbnail
+    var thumbnailWidth = 700; // Width for the thumbnail
+    var thumbnailHeight = 400; // Height for the thumbnail
 
     // Use the Street View Image API to get a static image of the current panorama with the specified dimensions for the thumbnail
     var thumbnailUrl = 'https://maps.googleapis.com/maps/api/streetview?size=' + thumbnailWidth + 'x' + thumbnailHeight + '&pano=' + currentPano + '&heading=' + heading + '&pitch=' + pitch + '&fov=90&zoom=' + zoom + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI';
