@@ -1,6 +1,7 @@
-
-
 // Declare the map variable in a broader scope so it's accessible within the takeSnapshot function
+
+
+
 var map;
 
 function getRandomLocation(locations) {
@@ -78,7 +79,7 @@ function initMap() {
                                 pitch: exactViewpoint.pitch || panoramaOptions.pitch
                             };
                             var thumbnailUrl = 'https://maps.googleapis.com/maps/api/streetview?size=200x200&location=' + location.lat + ',' + location.lng +
-                                '&fov=90&heading=' + thumbnailViewpoint.heading + '&pitch=' + thumbnailViewpoint.pitch + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI'; // Replace YOUR_API_KEY with your actual API key
+                                '&fov=50&heading=' + thumbnailViewpoint.heading + '&pitch=' + thumbnailViewpoint.pitch + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI'; // Replace YOUR_API_KEY with your actual API key
                             
                             // Create a container for thumbnail and location name
                             var thumbnailContainer = document.createElement('div');
@@ -146,30 +147,36 @@ function initMap() {
                 
             });
             document.getElementById('snapshot-button').addEventListener('click', takeSnapshotAndDisplay);
-        });
-      
 
+            // Call the function to display existing snapshots on page load
+            displayExistingSnapshots();
+        });
 }
-// Function to display existing snapshot images on page load
+
 function displayExistingSnapshots() {
     var snapshots = JSON.parse(localStorage.getItem('snapshots')) || [];
     var snapshotContainer = document.getElementById('snapshot-container');
     snapshotContainer.innerHTML = ''; // Clear existing content
 
     snapshots.forEach(function(snapshotUrl) {
+        // Create anchor tag
+        var anchor = document.createElement('a');
+        anchor.href = snapshotUrl; // Set the href attribute to the snapshot URL
+        anchor.target = '_blank'; // Open link in a new tab
+
+        // Create image element
         var snapshotImage = document.createElement('img');
         snapshotImage.src = snapshotUrl;
-        snapshotImage.style.width = '100px'; // Set width
+        snapshotImage.style.width = '150px'; // Set width
         snapshotImage.style.height = '100px'; // Set height
-        snapshotImage.addEventListener('click', function() {
-            window.open(snapshotUrl, '_blank'); // Open snapshot URL in a new tab
-        });
-        snapshotContainer.appendChild(snapshotImage);
+
+        // Append the image to the anchor tag
+        anchor.appendChild(snapshotImage);
+
+        // Append the anchor tag to the snapshot container
+        snapshotContainer.appendChild(anchor);
     });
 }
-
-// Call the function to display existing snapshots on page load
-displayExistingSnapshots();
 
 // Function to take a snapshot and display it in the location-info container
 function takeSnapshotAndDisplay() {
@@ -185,32 +192,40 @@ function takeSnapshotAndDisplay() {
     var pitch = viewpoint.pitch;
     var zoom = panorama.getZoom();
 
-    // Get the dimensions of the Street View container
-    var container = document.getElementById('map-container');
-    var containerWidth = container.offsetWidth;
-    var containerHeight = container.offsetHeight;
+    // Set the dimensions of the thumbnail
+    var thumbnailWidth = 150; // Width for the thumbnail
+    var thumbnailHeight = 100; // Height for the thumbnail
 
-    // Use the Street View Image API to get a static image of the current panorama with the same dimensions as the container
-    var streetViewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=' + containerWidth + 'x' + containerHeight + '&pano=' + currentPano + '&heading=' + heading + '&pitch=' + pitch + '&fov=90&zoom=' + zoom + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI';
+    // Use the Street View Image API to get a static image of the current panorama with the specified dimensions for the thumbnail
+    var thumbnailUrl = 'https://maps.googleapis.com/maps/api/streetview?size=' + thumbnailWidth + 'x' + thumbnailHeight + '&pano=' + currentPano + '&heading=' + heading + '&pitch=' + pitch + '&fov=90&zoom=' + zoom + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI';
 
-    // Create image element
-    var snapshotImage = document.createElement('img');
-    snapshotImage.src = streetViewUrl;
-    snapshotImage.style.width = '100px'; // Set width
-    snapshotImage.style.height = '100px'; // Set height
+    // Create image element for the thumbnail
+ 
+var thumbnailImage = document.createElement('img');
+thumbnailImage.src = thumbnailUrl;
+thumbnailImage.classList.add('snapshot-image'); // Add CSS class for styling
 
-    // Store the snapshot URL in local storage
+
+    // Store the thumbnail URL in local storage
     var snapshots = JSON.parse(localStorage.getItem('snapshots')) || [];
-    snapshots.push(streetViewUrl);
+    snapshots.push(thumbnailUrl);
     localStorage.setItem('snapshots', JSON.stringify(snapshots));
 
-    // Append the snapshot image to the snapshot container
+    // Append the thumbnail image to the snapshot container
     var snapshotContainer = document.getElementById('snapshot-container');
-    snapshotContainer.appendChild(snapshotImage);
+    snapshotContainer.appendChild(thumbnailImage);
 
-    // Add event listener to open snapshot in new tab
-    snapshotImage.addEventListener('click', function() {
-        window.open(streetViewUrl, '_blank'); // Open snapshot URL in a new tab
+    // Add event listener to open snapshot in new tab with different dimensions
+    thumbnailImage.addEventListener('click', function() {
+        // Set the dimensions of the snapshot in the new tab
+        var snapshotWidth = 600; // Width for the snapshot in the new tab
+        var snapshotHeight = 430; // Height for the snapshot in the new tab
+
+        // Use the Street View Image API to get a static image of the current panorama with the specified dimensions for the snapshot in the new tab
+        var snapshotUrl = 'https://maps.googleapis.com/maps/api/streetview?size=' + snapshotWidth + 'x' + snapshotHeight + '&pano=' + currentPano + '&heading=' + heading + '&pitch=' + pitch + '&fov=90&zoom=' + zoom + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI';
+
+        window.open(snapshotUrl, '_blank'); // Open snapshot URL in a new tab with specified dimensions for the snapshot
+        
     });
 }
 

@@ -72,20 +72,11 @@
         "title": "HELLO",
         "exactViewpoint": {
             "heading": 76.46, 
-            "pitch": -14.68, 
+            "pitch": -10.68, 
             "zoom": 2
         }
     },
-    {
-        "lat": 40.7058455,
-        "lng": -74.0098305,
-        "text": "Battery Park, New York City, USA",
-        "title": "HELLO",
-        "exactViewpoint": {
-            "heading": 81.69, 
-            "pitch": 85.33 
-        }
-    },
+ 
     {
         "lat": 51.4958055,
         "lng": -0.1607832,
@@ -444,5 +435,18 @@
             "pitch": -3.7,
             "zoom": 4
         }
+    },
+
+    {
+        "lat": -22.0933032,
+        "lng": 46.7704047,
+        "text": "Andringitra National Park",
+        "title": "hello mountains",
+        "exactViewpoint": {
+            "heading": 286.98,
+            "pitch": 30
+
+        }
     }
+    
 ]
