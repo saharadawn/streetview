@@ -6,27 +6,23 @@
    
 </head>
 <body>
-   
     <div id="title-text">
         street (view) photography
     </div>
-    <button id="refresh-button">Load New Location</button>
+   
     <div id="map-container">
-      
         <div id="map"></div>
         <div id="text-container">
-     
-
-            <div id="title-text"></div>
-        <div id="location-text"></div> <!-- Add a div for location text -->
-        <div id="distance-text"></div> <!-- Add a div for distance text -->
-        <div id="blur-overlay"></div> <!-- Add a div for the blur overlay -->
-
-        
+                <div id="location-info">
+                    <button id="refresh-button">Load New Location</button>
+                    <div id="location-title"></div> <!-- Add a div for location title -->
+                    <div id="location-text"></div> <!-- Add a div for location text -->
+                    <div id="distance-text"></div> <!-- Add a div for distance text -->
+            </div>
+        </div>
     </div>
     <!-- Side panel for thumbnails -->
-    <div id="thumbnails-panel">
-       </div>
+    <div id="thumbnails-panel"></div>
         <!-- Add more thumbnail images as needed -->
     <script src="script.js"></script>
     <!-- Load the Google Maps JavaScript API -->

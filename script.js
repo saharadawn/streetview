@@ -40,18 +40,9 @@ function initMap() {
                             });
                         map.setStreetView(panorama);
 
-                        var locationText = "Location: " + randomLocation.text;
-                        var index = 0;
-
-                        function typeLocationText() {
-                            if (index < locationText.length) {
-                                document.getElementById('location-text').textContent += locationText.charAt(index);
-                                index++;
-                                setTimeout(typeLocationText, 100);
-                                document.getElementById('blur-overlay').style.opacity = 1 - (index / locationText.length);
-                            }
-                        }
-                        typeLocationText();
+                        // Update title, location, and distance text
+                        document.getElementById('location-title').textContent = "Title: " + randomLocation.title;
+                        document.getElementById('location-text').textContent = "Location: " + randomLocation.text;
 
                         if (navigator.geolocation) {
                             navigator.geolocation.getCurrentPosition(function(position) {
@@ -93,7 +84,8 @@ function initMap() {
                                 panorama.setPov(thumbnailViewpoint);
 
                                 // Update typing text
-                                updateTypingText(location.text);
+                                document.getElementById('location-title').textContent = "Title: " + location.title;
+                                document.getElementById('location-text').textContent = "Location: " + location.text;
 
                                 // Update distance text
                                 if (navigator.geolocation) {
@@ -112,12 +104,6 @@ function initMap() {
                 });
             }
 
-            function updateTypingText(text) {
-                document.getElementById('location-text').textContent = "Location: " + text;
-                // Reset blur overlay
-                document.getElementById('blur-overlay').style.opacity = 1;
-            }
-
             function updateDistanceText(userLat, userLng, location) {
                 var distance = google.maps.geometry.spherical.computeDistanceBetween(
                     new google.maps.LatLng(userLat, userLng),
@@ -128,6 +114,14 @@ function initMap() {
                 document.getElementById('distance-text').textContent = distanceText;
             }
 
-            initializeMap(getRandomLocation(locations));
+            // Initialize map with a random location
+            var initialLocation = getRandomLocation(locations);
+            initializeMap(initialLocation);
+
+            // Update text upon refresh button click
+            document.getElementById('refresh-button').addEventListener('click', function() {
+                var newLocation = getRandomLocation(locations);
+                initializeMap(newLocation);
+            });
         });
 }

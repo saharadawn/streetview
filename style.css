@@ -15,8 +15,9 @@ html, body {
 
 #title-text{
     color: black;
-    font-size: 2rem;
-    margin-top: .5rem;
+    font-size: 3rem;
+
+
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -32,32 +33,9 @@ html, body {
    
 }
 
-#location-text {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 20px;
-    color: black;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 1000; 
-    overflow: hidden;
-    white-space: nowrap; 
 
-}
 
-#distance-text {
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    font-size: 1rem;
-    color: black;
-    padding: 10px;
- font-family: Arial, Helvetica, sans-serif;
-    z-index: 1000; 
-    overflow: hidden; 
-    white-space: nowrap; 
-}
+
 
 #thumbnails-panel {
     position: fixed;
@@ -80,6 +58,20 @@ html, body {
    
 }
 
+#text-container {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#location-title, #location-text, #distance-text {
+   
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+#thumbnails-panel {
+    margin-top: 20px; /* Adjust margin as needed */
+}
 
 
 

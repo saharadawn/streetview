@@ -25,7 +25,7 @@
         "lat": 13.9502548,
         "lng": 75.5902423,
         "text": "Western Ghats, India",
-        "title": "HELLO",
+        "title": "simple dog",
         "exactViewpoint": {
             "heading": 210.41,
             "pitch": -13.75, 
@@ -47,7 +47,7 @@
         "lat": 28.9795412,
         "lng": -13.5476138,
         "text": "Lanzarote, Spain",
-        "title": "HELLO",
+        "title": "things they left behind",
         "exactViewpoint": {
             "heading": 219.19,
             "pitch": -8.3,
@@ -58,7 +58,7 @@
         "lat": 35.3212003,
         "lng": -106.5539356,
         "text": "Albuquerque, New Mexico, USA",
-        "title": "HELLO",
+        "title": "heart eyes for desert suburbia",
         "exactViewpoint": {
             "heading": 36.01, 
             "pitch": -7.83, 
@@ -90,7 +90,7 @@
         "lat": 51.4958055,
         "lng": -0.1607832,
         "text": "Buckingham Palace, London, UK",
-        "title": "HELLO",
+        "title": "invasion of privacy",
         "exactViewpoint": {
             "heading": 350.64, 
             "pitch": 2, 
@@ -101,6 +101,7 @@
         "lat": 37.8770857,
         "lng": -4.7837702,
         "text": "Cordoba, Spain",
+        "title": "knock knock!",
         "exactViewpoint": {
             "heading": 241.06, 
             "pitch": -8.21 
@@ -109,6 +110,7 @@
     {
         "lat": 29.2461919,
         "lng": -13.5092233,
+        "title": "mount",
         "text": "Fuerteventura, Spain",
         "exactViewpoint": {
             "heading": 248.89, 
@@ -119,6 +121,7 @@
     {
         "lat": 41.8302558,
         "lng": -3.0670121,
+        "title": "a mother, a son, a child–perplexed",
         "text": "S. Leonardo de Yagüe, Soria, Spain",
         "exactViewpoint": {
             "heading": 832, 
@@ -130,6 +133,7 @@
         "lat": 41.8946088,
         "lng": 12.4842658,
         "text": "Rome, Italy",
+        "title": "two friends encounter google maps",
         "exactViewpoint": {
             "heading": 304.18, 
             "pitch": -24.33,
@@ -139,6 +143,7 @@
     {
         "lat": 53.6555157,
         "lng": -6.6770602,
+        "title": "2009 Summer",
         "text": "County Meath, Ireland",
         "exactViewpoint": {
             "heading": 148.45, 
@@ -202,7 +207,7 @@
         "lat": 37.1659704,
         "lng": 38.7642479,
         "text": "Sanliurfa, Turkey",
-        "title": "HELLO",
+        "title": "young archer",
         "exactViewpoint": {
             "heading": 158.16,
             "pitch": -7,
@@ -213,7 +218,7 @@
         "lat": 37.1663393,
         "lng": 38.7643656,
         "text": "Sanliurfa, Turkey",
-        "title": "HELLO",
+        "title": "apple a day",
         "exactViewpoint": {
             "heading": 268.47,
             "pitch": -14.86,
@@ -278,7 +283,7 @@
         "lat": 45.3629477,
         "lng": 9.6868983,
         "text": "Crema, Italy",
-        "title": "HELLO",
+        "title": "afternoon bike",
         "exactViewpoint": {
             "heading": 295.34,
             "pitch": -22.39,
@@ -289,7 +294,7 @@
         "lat": 43.4675219,
         "lng": 11.8850158,
         "text": "Arezzo, Italy",
-        "title": "HELLO",
+        "title": "in a yellow shirt, he overlooks his town",
         "exactViewpoint": {
             "heading": 68.07,
             "pitch": -12.99,
@@ -311,7 +316,7 @@
         "lat": 13.5981531,
         "lng": -15.6048677,
         "text": "Keur Ayip, Gambia",
-        "title": "HELLO",
+        "title": "installation",
         "exactViewpoint": {
             "heading": 131.87,
             "pitch": -7.35,
@@ -344,7 +349,7 @@
         "lat": 16.217713,
         "lng": 100.4232909,
         "text": "Taphan Hin, Phichit",
-        "title": "HELLO",
+        "title": "wants to be a dog",
         "exactViewpoint": {
             "heading": 236.96,
             "pitch": -15.14,
@@ -366,7 +371,7 @@
         "lat": 34.1492002,
         "lng": 135.355252,
         "text": "Kimino, Wakayama",
-        "title": "HELLO",
+        "title": "mirror 1/3",
         "exactViewpoint": {
             "heading": 250.27,
             "pitch": 15.86,
@@ -377,7 +382,7 @@
         "lat": 35.3772038,
         "lng": 136.2720485,
         "text": "Nagahama, Shiga",
-        "title": "HELLO",
+        "title": "mirror 2/3",
         "exactViewpoint": {
             "heading": 204.9,
             "pitch": 11,
@@ -399,7 +404,7 @@
         "lat": 49.1540913,
         "lng": 6.145563,
         "text": "Woippy, France",
-        "title": "HELLO",
+        "title": "no this is not america, this is france",
         "exactViewpoint": {
             "heading": 63.2,
             "pitch": 3,
@@ -421,7 +426,7 @@
         "lat": -20.2581021,
         "lng": 23.8278468,
         "text": "Mmumoshweu, Botswana",
-        "title": "HELLO",
+        "title": "follow my lead!",
         "exactViewpoint": {
             "heading": 245.07,
             "pitch": -5.8,
