@@ -500,7 +500,7 @@
         "title": "untitled",
         "exactViewpoint": {
             "heading": 199.75,
-            "pitch": -18.8,
+            "pitch": -21.8,
             "zoom": 2
         }
     },
@@ -522,7 +522,7 @@
         "title": "to simply sit and wait",
         "exactViewpoint": {
             "heading": 229.62,
-            "pitch": -9.91,
+            "pitch": -11.91,
         "zoom": 3
         }
     },
@@ -669,7 +669,7 @@
         "title": "simple seals",
         "exactViewpoint": {
             "heading": 153.14,
-            "pitch": -20.86,
+            "pitch": -15.86,
             "zoom": 3
         }
     },
@@ -696,7 +696,20 @@
             "pitch": -10.24,
             "zoom": 2
         }
+    },
+
+    {
+        "lat": 48.9457371,
+        "lng": 20.5689353,
+        "text": "Centro Carni",
+        "title": "in mourning",
+        "exactViewpoint": {
+            "heading": 51.29,
+            "pitch": -8.42,
+            "zoom": 3
+        }
     }
+    
     
     
     
