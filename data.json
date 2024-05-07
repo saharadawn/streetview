@@ -65,17 +65,6 @@
             "zoom": 2
         }
     },
-    {
-        "lat": 40.7179253,
-        "lng": -73.9971067,
-        "text": "Chinatown, New York City, USA",
-        "title": "HELLO",
-        "exactViewpoint": {
-            "heading": 76.46, 
-            "pitch": -10.68, 
-            "zoom": 2
-        }
-    },
  
     {
         "lat": 51.4958055,
@@ -220,8 +209,8 @@
     {
         "lat": 37.1614625,
         "lng": 38.7665546,
-        "text": "Sanliurfa, Turkeycar?",
-        "title": "HELLO",
+        "text": "Sanliurfa, Turkey",
+        "title": "untitled",
         "exactViewpoint": {
             "heading": 90.07,
             "pitch": -14.92,
@@ -253,8 +242,8 @@
     {
         "lat": 37.1630838,
         "lng": 38.7644628,
-        "text": "Location Name",
-        "title": "HELLO",
+        "text": "Sanliurfa, Turkey",
+        "title": "umut market",
         "exactViewpoint": {
             "heading": 219.25,
             "pitch": -15.63,
@@ -476,7 +465,7 @@
         "title": "in july",
         "exactViewpoint": {
             "heading": 132.6,
-            "pitch": 10.77,
+            "pitch": -5.77,
             "zoom": 2.4
         }
     },
@@ -531,7 +520,7 @@
         "title": "untitled",
         "exactViewpoint": {
             "heading": 148.6,
-            "pitch": 30.63
+            "pitch": 25.63
         }
     },
 
@@ -571,6 +560,114 @@
             "zoom": 3
  
         }
+    },
+    {
+        "lat": -6.9827982,
+        "lng": 110.4142977,
+        "text": "Semarang, Central Java",
+        "title": "in java",
+        "exactViewpoint": {
+            "heading": 99.24,
+            "pitch": -7.22,
+            "zoom": 1.3
+ 
+        }
+    },
+
+    {
+        "lat": 1.4390915,
+        "lng": 125.1271204,
+        "text": "Bitung, North Salawesi",
+        "title": "markets of north salawesi",
+        "exactViewpoint": {
+            "heading": 171.98,
+            "pitch": -15.06,
+            "zoom": 2
+        }
+    },
+    {
+        "lat": 1.75498,
+        "lng": 40.0494522,
+        "text": "Wajir, Kenya",
+        "title": "in wajir",
+        "exactViewpoint": {
+            "heading": 105.73,
+            "pitch": -10.37,
+            "zoom": 1
+            
+        }
+    },
+
+    {
+        "lat": 33.12082,
+        "lng": 139.8024797,
+        "text": "Hachijo Town, Japan",
+        "title": "road repair",
+        "exactViewpoint": {
+            "heading": 79.43,
+            "pitch": -10.21,
+            "zoom": 3
+        }
+    },
+
+    {
+        "lat": 57.6426561,
+        "lng": 18.2952934,
+        "text": "Visby, Gotland County",
+        "title": "untitled",
+        "exactViewpoint": {
+            "heading": 224.33,
+            "pitch": -10.57,
+            "zoom": 2
+        }
+    },
+
+    {
+        "lat": 59.428852,
+        "lng": 24.7308345,
+        "text": "Tallin, Estonia",
+        "title": "waving at me?",
+        "exactViewpoint": {
+            "heading": 247.13,
+            "pitch": -8.25,
+            "zoom": 3
+        }
+    },
+
+    {
+        "lat": 6.6763318,
+        "lng": 3.3094941,
+        "text": "Lagos, Nigeria",
+        "title": "run!",
+        "exactViewpoint": {
+            "heading": 300.41,
+            "pitch": -20.71,
+            "zoom": 3
+        }
+    },
+
+    {
+        "lat": 6.6751476,
+        "lng": 3.3085634,
+        "text": "Lagos, Nigeria",
+        "title": "untitled",
+        "exactViewpoint": {
+            "heading": 268.56,
+            "pitch": -10.52
+         
+        }
+    },
+
+    {
+        "lat": 0.3366291,
+        "lng": 6.7394516,
+        "text": "Location in Nigeria",
+        "title": "in Nigeria",
+        "exactViewpoint": {
+            "heading": 101.67,
+            "pitch": 99.45,
+            "zoom": 3
+        }
     }
     
     
@@ -578,6 +675,10 @@
     
     
     
+    
+    
+    
+
     
     
     
