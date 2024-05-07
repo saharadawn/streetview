@@ -231,8 +231,19 @@
     {
         "lat": 37.1631766,
         "lng": 38.7636548,
-        "text": "Location Namegirl?",
-        "title": "HELLO",
+        "text": "Sanliurfa, Turkey",
+        "title": "untitled",
+        "exactViewpoint": {
+            "heading": 77.04,
+            "pitch": -6.46,
+            "zoom": 3
+        }
+    },
+    {
+        "lat": 37.1631766,
+        "lng": 38.7636548,
+        "text": "Sanliurfa, Turkey",
+        "title": "untitled",
         "exactViewpoint": {
             "heading": 77.04,
             "pitch": -6.46,
@@ -534,7 +545,21 @@
             "pitch": -9.91,
         "zoom": 3
         }
+    },
+
+    {
+        "lat": 39.3909034,
+        "lng": -3.2135996,
+        "text": "Alcazar de San Juan, Spain",
+        "title": "untitled",
+        "exactViewpoint": {
+            "heading": 103.24,
+            "pitch": -7.22,
+            "zoom": 3
+ 
+        }
     }
+    
     
     
     
