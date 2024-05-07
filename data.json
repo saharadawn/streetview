@@ -47,7 +47,7 @@
         "lat": 28.9795412,
         "lng": -13.5476138,
         "text": "Lanzarote, Spain",
-        "title": "things they left behind",
+        "title": "the things they left",
         "exactViewpoint": {
             "heading": 219.19,
             "pitch": -8.3,
@@ -544,6 +544,19 @@
             "heading": 229.62,
             "pitch": -9.91,
         "zoom": 3
+        }
+    },
+
+    {
+        "lat": 39.3909034,
+        "lng": -3.2135996,
+        "text": "Alcazar de San Juan, Spain",
+        "title": "untitled",
+        "exactViewpoint": {
+            "heading": 103.24,
+            "pitch": -7.22,
+            "zoom": 3
+ 
         }
     },
 
