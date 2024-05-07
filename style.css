@@ -8,9 +8,11 @@ html, body {
 }
 
 #map-container {
+    display: flex;
+    flex-direction: row;
     position: relative;
     height: 90%;
-    margin: 1rem;   
+    margin: rem;   
 }
 
 #title-text{
@@ -31,7 +33,7 @@ html, body {
     left: 50%; 
     transform: translate(-50%, -50%); 
     width: 50%;
-    height: 416px;
+    height: 450px;
    
 }
 
@@ -74,25 +76,42 @@ html, body {
 }
 
 
-
-#location-info{
+#location-info {
     display: flex;
     flex-direction: column;
+    width: 11rem;
+    padding: 1rem;
+    margin-left: 4rem;
+    margin-top: 9rem;
+ 
    
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid black; /* Add border */
+    border-radius: 0px; /* Add border radius for rounded corners */
 
 }
+
+   
+
+
 #snapshot-button{
     width: 120px;
+    margin-top: .5rem;
+
 }
 #refresh-button{
-    width: 120px
+    width: 120px;
+    margin-top: 2rem;
+ 
 }
 .thumbnail-container p {
     margin-top: -7px;
     background-color: white;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
+
 
 
 
