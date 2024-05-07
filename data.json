@@ -134,7 +134,7 @@
     {
         "lat": 34.5227431,
         "lng": 139.2840826,
-        "text": "Japan",
+        "text": "Toshima, Japan",
         "title": "postcard",
         "exactViewpoint": {
             "heading": 46.48, 
@@ -591,9 +591,9 @@
         "text": "Wajir, Kenya",
         "title": "in wajir",
         "exactViewpoint": {
-            "heading": 105.73,
+            "heading": 109.73,
             "pitch": -10.37,
-            "zoom": 1
+            "zoom": 2
             
         }
     },
@@ -640,8 +640,8 @@
         "text": "Lagos, Nigeria",
         "title": "run!",
         "exactViewpoint": {
-            "heading": 300.41,
-            "pitch": -20.71,
+            "heading": 305.41,
+            "pitch": -27.71,
             "zoom": 3
         }
     },
@@ -653,7 +653,8 @@
         "title": "untitled",
         "exactViewpoint": {
             "heading": 268.56,
-            "pitch": -10.52
+            "pitch": -10.52,
+            "zoom": 1.6
          
         }
     },
@@ -661,14 +662,40 @@
     {
         "lat": 0.3366291,
         "lng": 6.7394516,
-        "text": "Location in Nigeria",
-        "title": "in Nigeria",
+        "text": "Sao Tome",
+        "title": "heaven's gate",
         "exactViewpoint": {
-            "heading": 101.67,
-            "pitch": 99.45,
+            "heading": 98.67,
+            "pitch": 0.45,
+            "zoom": 2
+        }
+    },
+
+    {
+        "lat": -54.0148004,
+        "lng": -37.6980754,
+        "text": "Right Whale Bay",
+        "title": "simple seals",
+        "exactViewpoint": {
+            "heading": 153.14,
+            "pitch": -20.86,
+            "zoom": 3
+        }
+    },
+
+    {
+        "lat": 22.2508484,
+        "lng": 114.1721744,
+        "text": "Hong Kong, Hong Kong Island",
+        "title": "on break",
+        "exactViewpoint": {
+            "heading": 209.43,
+            "pitch": -10.51,
             "zoom": 3
         }
     }
+    
+    
     
     
     
