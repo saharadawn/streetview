@@ -21,7 +21,7 @@ html, body {
     display: flex;
     flex-direction: column;
 
-
+margin-top: .5rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -47,6 +47,7 @@ html, body {
     width: 10%;
     height: 100%;
     background-color:white;
+    border: 1px solid black; /* Add border */
     overflow-y: auto;
     padding: 10px;
 
@@ -59,6 +60,8 @@ html, body {
     height: 90px;
    
 }
+
+
 
 #text-container {
     display: flex;
@@ -77,17 +80,15 @@ html, body {
 
 
 #location-info {
-    display: flex;
-    flex-direction: column;
-    width: 11rem;
-    padding: 1rem;
-    margin-left: 4rem;
-    margin-top: 9rem;
- 
-   
-    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    background-color:white;
     border: 1px solid black; /* Add border */
-    border-radius: 0px; /* Add border radius for rounded corners */
+    overflow-y: auto;
+    padding: 10px;
 
 }
 
@@ -109,6 +110,7 @@ html, body {
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+
 
 }
 

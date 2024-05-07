@@ -1,3 +1,5 @@
+
+
 // Declare the map variable in a broader scope so it's accessible within the takeSnapshot function
 var map;
 
@@ -141,17 +143,36 @@ function initMap() {
             document.getElementById('refresh-button').addEventListener('click', function() {
                 var newLocation = getRandomLocation(locations);
                 initializeMap(newLocation);
+                
             });
+            document.getElementById('snapshot-button').addEventListener('click', takeSnapshotAndDisplay);
         });
+      
+
+}
+// Function to display existing snapshot images on page load
+function displayExistingSnapshots() {
+    var snapshots = JSON.parse(localStorage.getItem('snapshots')) || [];
+    var snapshotContainer = document.getElementById('snapshot-container');
+    snapshotContainer.innerHTML = ''; // Clear existing content
+
+    snapshots.forEach(function(snapshotUrl) {
+        var snapshotImage = document.createElement('img');
+        snapshotImage.src = snapshotUrl;
+        snapshotImage.style.width = '100px'; // Set width
+        snapshotImage.style.height = '100px'; // Set height
+        snapshotImage.addEventListener('click', function() {
+            window.open(snapshotUrl, '_blank'); // Open snapshot URL in a new tab
+        });
+        snapshotContainer.appendChild(snapshotImage);
+    });
 }
 
-// Function to take a snapshot
-// Function to take a snapshot
-function takeSnapshot() {
-    // Specify the desired dimensions for the snapshot image
-    var snapshotWidth = '900'; // Example width
-    var snapshotHeight = '430'; // Example height
+// Call the function to display existing snapshots on page load
+displayExistingSnapshots();
 
+// Function to take a snapshot and display it in the location-info container
+function takeSnapshotAndDisplay() {
     // Get the current panorama from the StreetViewService
     var panorama = map.getStreetView();
     var currentPano = panorama.getPano();
@@ -164,14 +185,44 @@ function takeSnapshot() {
     var pitch = viewpoint.pitch;
     var zoom = panorama.getZoom();
 
-    // Use the Street View Image API to get a static image of the current panorama with the specified dimensions
-    var streetViewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=' + snapshotWidth + 'x' + snapshotHeight + '&pano=' + currentPano + '&heading=' + heading + '&pitch=' + pitch + '&fov=90&zoom=' + zoom + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI';
+    // Get the dimensions of the Street View container
+    var container = document.getElementById('map-container');
+    var containerWidth = container.offsetWidth;
+    var containerHeight = container.offsetHeight;
 
-    // Open the image in a new tab or window for the user to save or share
-    window.open(streetViewUrl, '_blank');
+    // Use the Street View Image API to get a static image of the current panorama with the same dimensions as the container
+    var streetViewUrl = 'https://maps.googleapis.com/maps/api/streetview?size=' + containerWidth + 'x' + containerHeight + '&pano=' + currentPano + '&heading=' + heading + '&pitch=' + pitch + '&fov=90&zoom=' + zoom + '&key=AIzaSyD3f65XaCAyZAfkqnlnj_D0ruxgtyxU0HI';
+
+    // Create image element
+    var snapshotImage = document.createElement('img');
+    snapshotImage.src = streetViewUrl;
+    snapshotImage.style.width = '100px'; // Set width
+    snapshotImage.style.height = '100px'; // Set height
+
+    // Store the snapshot URL in local storage
+    var snapshots = JSON.parse(localStorage.getItem('snapshots')) || [];
+    snapshots.push(streetViewUrl);
+    localStorage.setItem('snapshots', JSON.stringify(snapshots));
+
+    // Append the snapshot image to the snapshot container
+    var snapshotContainer = document.getElementById('snapshot-container');
+    snapshotContainer.appendChild(snapshotImage);
+
+    // Add event listener to open snapshot in new tab
+    snapshotImage.addEventListener('click', function() {
+        window.open(streetViewUrl, '_blank'); // Open snapshot URL in a new tab
+    });
 }
 
+// Function to clear snapshots
+function clearSnapshots() {
+    // Clear snapshot URLs from local storage
+    localStorage.removeItem('snapshots');
 
+    // Remove displayed snapshot images from the page
+    var snapshotContainer = document.getElementById('snapshot-container');
+    snapshotContainer.innerHTML = ''; // Clear existing content
+}
 
-// Add event listener for the snapshot button
-document.getElementById('snapshot-button').addEventListener('click', takeSnapshot);
+// Add event listener to clear snapshots button
+document.getElementById('clear-snapshots-button').addEventListener('click', clearSnapshots);
